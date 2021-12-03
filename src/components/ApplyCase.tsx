@@ -57,7 +57,7 @@ function ApplyCase() {
           ))}
         </ul>
         <APILoader akay="a862b590921eac6638988faca50827da">
-          <Map>
+          <Map center={[120.246602, 29.709398]}>
             <ScaleControl offset={[16, 30]} position="LB" />
             <ToolBarControl offset={[16, 10]} position="RB" />
             <ControlBarControl offset={[16, 180]} position="RB" />
@@ -78,12 +78,7 @@ function ApplyCase() {
               zoomToAccuracy={true}
               onComplete={(data) => {
                 console.log("返回数据：", setData, data);
-                fetch(
-                  "https://restapi.amap.com/v3/config/district?keywords=诸暨市&key=a862b590921eac6638988faca50827da"
-                )
-                  .then((r) => r.json())
-                  .then((r) => setData(r));
-                // setData(data);
+                setData(data);
               }}
               onError={(data) => {
                 console.log("错误返回数据：", data);
