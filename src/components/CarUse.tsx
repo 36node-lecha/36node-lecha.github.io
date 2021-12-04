@@ -1,26 +1,26 @@
 import React from "react";
 import { Card, Select, Table } from "antd";
 import { CustomTitle } from ".";
-import { Cars } from "../mock";
+import { Cars, FeesFilter } from "../mock";
 
 const { Option } = Select;
 
 function CarUse() {
-  const handleChange = (value) => {
-    console.log(`selected ${value}`);
+  const handleChange = (e) => {
+    console.log(`selected ${e}`);
   };
 
   const getColumnSearchProps = (dataIndex) => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm }) => (
       <div style={{ padding: 8 }}>
         <Select
-          defaultValue="all"
+          defaultValue={FeesFilter[dataIndex][0].value}
           style={{ width: 120 }}
           onChange={handleChange}
         >
-          <Option value="all">全部</Option>
-          <Option value="zi">自有车辆</Option>
-          <Option value="zu">租赁车辆</Option>
+          {FeesFilter[dataIndex].map(({ value, title }: any) => (
+            <Option value={value}>{title}</Option>
+          ))}
         </Select>
       </div>
     ),
@@ -62,7 +62,7 @@ function CarUse() {
       title: "车辆事故",
       dataIndex: "issue",
       key: "issue",
-      ...getColumnSearchProps("issue"),
+      // ...getColumnSearchProps("issue"),
     },
     {
       title: "交通违章",

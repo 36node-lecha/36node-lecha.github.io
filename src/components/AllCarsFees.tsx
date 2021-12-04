@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Radio, Space, Table, Typography } from "antd";
 import { CustomTitle } from ".";
-import { SelfCarsFees } from "../mock";
+import { FeesFilter, SelfCarsFees } from "../mock";
 const { Title } = Typography;
 
 function AllCarsFees() {
@@ -13,13 +13,13 @@ function AllCarsFees() {
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm }) => (
       <div style={{ padding: 8 }}>
         <Radio.Group
-          defaultValue="day"
+          defaultValue={FeesFilter[dataIndex][0].value}
           onChange={handleChange}
           style={{ marginTop: 16 }}
         >
-          <Radio.Button value="day">日</Radio.Button>
-          <Radio.Button value="month">月</Radio.Button>
-          <Radio.Button value="year">年</Radio.Button>
+          {FeesFilter[dataIndex].map(({ value, title }: any) => (
+            <Radio.Button value={value}>{title}</Radio.Button>
+          ))}
         </Radio.Group>
       </div>
     ),

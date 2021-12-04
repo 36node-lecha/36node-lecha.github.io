@@ -261,3 +261,46 @@ export const SelfCarsFees = [
     distance: 2500,
   },
 ];
+
+export const FeesFilter = {
+  date: [
+    { value: "day", title: "日" },
+    { value: "month", title: "月" },
+    { value: "year", title: "年" },
+  ],
+  fee: [
+    { value: "you", title: "油费" },
+    { value: "xiu", title: "维修费" },
+    { value: "bao", title: "保养费" },
+    { value: "xian", title: "保险费" },
+    { value: "gou", title: "新车购置税" },
+  ],
+  distance: [
+    { value: "day", title: "周" },
+    { value: "month", title: "月" },
+    { value: "season", title: "季" },
+    { value: "year", title: "年" },
+  ],
+  category: [
+    { value: "all", title: "全部" },
+    { value: "self", title: "自有车辆" },
+    { value: "rent", title: "租赁车辆" },
+  ],
+  type: [
+    { value: "5", title: "5人座" },
+    { value: "7", title: "7人座" },
+    { value: "small", title: "小型客车" },
+    { value: "big", title: "大型客车" },
+  ],
+  use: [
+    { value: "all", title: "全部" },
+    { value: "in", title: "市内" },
+    { value: "inside", title: "省内差旅" },
+    { value: "outside", title: "省外差旅" },
+  ],
+  time: [
+    { value: "all", title: "全部" },
+    { value: "manul", title: "手动选择" },
+    { value: "date", title: "时间" },
+  ],
+};
