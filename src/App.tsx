@@ -30,7 +30,7 @@ function App() {
           <Reform />
 
           <Card
-            title={<CustomTitle title="全市公务用车数量" />}
+            title={<CustomTitle title="全市公务用车使用量" />}
             bordered={false}
           >
             <DemoColumn />

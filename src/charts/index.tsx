@@ -8,7 +8,7 @@ export const DemoColumn = () => {
       汽车数量: 720,
     },
     {
-      name: "可租赁车辆",
+      name: "租赁车辆",
       部门: "市政府",
       汽车数量: 240,
     },
@@ -18,7 +18,7 @@ export const DemoColumn = () => {
       汽车数量: 380,
     },
     {
-      name: "可租赁车辆",
+      name: "租赁车辆",
       部门: "公安局",
       汽车数量: 640,
     },
@@ -28,7 +28,7 @@ export const DemoColumn = () => {
       汽车数量: 720,
     },
     {
-      name: "可租赁车辆",
+      name: "租赁车辆",
       部门: "交警大队",
       汽车数量: 440,
     },
@@ -38,7 +38,7 @@ export const DemoColumn = () => {
       汽车数量: 620,
     },
     {
-      name: "可租赁车辆",
+      name: "租赁车辆",
       部门: "城市管理局",
       汽车数量: 640,
     },
@@ -48,7 +48,7 @@ export const DemoColumn = () => {
       汽车数量: 380,
     },
     {
-      name: "可租赁车辆",
+      name: "租赁车辆",
       部门: "法院",
       汽车数量: 640,
     },
@@ -58,7 +58,7 @@ export const DemoColumn = () => {
       汽车数量: 180,
     },
     {
-      name: "可租赁车辆",
+      name: "租赁车辆",
       部门: "检察院",
       汽车数量: 440,
     },
@@ -165,7 +165,7 @@ export const DemoPie2 = () => {
     data,
     angleField: "value",
     colorField: "type",
-    color: ["#62c1dd", "#FDA57F"],
+    color: ["#21d9e0", "#EB6C53"],
     radius: 1,
     innerRadius: 0.6,
     label: {
@@ -205,11 +205,11 @@ export const DemoPie3 = () => {
   const data = [
     {
       type: "公务用车",
-      value: 75,
+      value: 35,
     },
     {
       type: "租赁车辆支出费用占比",
-      value: 25,
+      value: 55,
     },
   ];
   const config = {
@@ -217,7 +217,7 @@ export const DemoPie3 = () => {
     data,
     angleField: "value",
     colorField: "type",
-    color: ["#62c1dd", "#FDA57F"],
+    color: ["#21d9e0", "#EB6C53"],
 
     radius: 1,
     innerRadius: 0.6,
@@ -258,11 +258,11 @@ export const DemoPie4 = () => {
   const data = [
     {
       type: "公务用车",
-      value: 75,
+      value: 15,
     },
     {
       type: "自有车辆违章次数占比",
-      value: 25,
+      value: 80,
     },
   ];
   const config = {
@@ -270,8 +270,7 @@ export const DemoPie4 = () => {
     data,
     angleField: "value",
     colorField: "type",
-    color: ["#62c1dd", "#FDA57F"],
-
+    color: ["#21d9e0", "#EB6C53"],
     radius: 1,
     innerRadius: 0.6,
     label: {
