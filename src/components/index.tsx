@@ -13,7 +13,7 @@ export const CustomTitle = ({
   titleColor,
 }: ICustomTitleProps) => {
   return (
-    <div style={{ color: titleColor || "#111" }}>
+    <div style={{ color: titleColor || "#111", fontSize: 20 }}>
       <Divider
         type="vertical"
         style={{ borderWidth: 5, borderColor: color || "#018EED", height: 18 }}

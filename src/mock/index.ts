@@ -16,7 +16,7 @@ export const RepairedCars = [
 
 export const DoneCars = [
   "法院 浙D xxxxx 超时还车已处理",
-  "检察院 浙D xxxxx 路线偏移已处理",
+  "大数据管理中心 浙D xxxxx 路线偏移已处理",
   "公安局 浙D xxxxx 超时停车已处理",
   "公安局 浙D xxxxx 超速违章已处理",
   "交警大队 浙D xxxxx 超时还车已处理",
@@ -25,13 +25,13 @@ export const DoneCars = [
 export const IlegalCars = [
   "市政府 浙D xxxxx 用车超时",
   "公安局 浙D xxxxx 用车超时",
-  "检察院 浙D xxxxx 行车超过边界",
+  "大数据管理中心 浙D xxxxx 行车超过边界",
   "法院 浙D xxxxx 维修核价失败",
   "交警大队 浙D xxxxx 配件核价失败",
 ];
 
 export const PoliceCars = [
-  "检察院 浙D xxxxx 行车压线",
+  "大数据管理中心 浙D xxxxx 行车压线",
   "公安局 浙D xxxxx 超速行驶",
   "城管局 浙D xxxxx 超速行驶",
   "法院 浙D xxxxx 禁停区停车",
@@ -255,7 +255,7 @@ export const SelfCarsFees = [
     distance: 2500,
   },
   {
-    department: "检察院",
+    department: "大数据管理中心",
     date: "2021-11-29",
     fee: "158000.00",
     distance: 2500,
